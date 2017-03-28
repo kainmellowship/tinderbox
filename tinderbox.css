@@ -2,47 +2,60 @@
     animation: enterTree 3s linear forwards;
 }
 
-@keyframes enterTree{
-    to {
-        transform: translate(50vw);
-
+@keyframes enterTree {
+    100% {
+        opacity: 0;
+        transform: translate(40vw);
     }
 }
 
 div {
+    position: absolute;
+    width: 1100px;
     height: 400px;
     border: 5px black solid;
 }
 
-#witch{
+#witch {position: absolute;
     width: 100px;
+    top: 15%;
 }
-#soldier{
+
+#soldier { position: absolute;
     width: 100px;
+    top: 10%;
+    left: 10%;
 }
-#tree{
+
+#tree {
     height: 200px;
     position: absolute;
     left: 40%;
-
 }
-#chest{
+
+#chest {
     width: 100px;
     position: absolute;
     left: 80%;
     top: 25%;
 }
-#dog{
+
+#dog {
     width: 100px;
     position: absolute;
     left: 70%;
     top: 30%;
 }
 
-
 h3 {
-position: absolute;
+    position: absolute;
     bottom: 10%;
     max-width: 60%;
     padding-left: 20%;
+}
+
+#buttonOne {
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
 }
