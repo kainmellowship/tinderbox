@@ -1,10 +1,10 @@
 .enterTree {
-    animation: 3s forwards;
+    animation: enterTree 3s linear forwards;
 }
 
 @keyframes enterTree{
     to {
-        transform: translate(50vw)
+        transform: translate(50vw);
 
     }
 }

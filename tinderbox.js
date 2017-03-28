@@ -3,11 +3,13 @@ let soldier = document.querySelector("soldier");
 let tree = document.querySelector("tree");
 let dog = document.querySelector("dog");
 let chest = document.querySelector("chest");
-let buttonOne = document.querySelector("#A");
+let A = document.querySelector("#A");
 
-buttonOne.addEventListener("click", buttonOne);
+console.log("Let the fairytale begin!")
+A.addEventListener("click", enterTree);
 
-function buttonOne(){
+
+function enterTree(){
     console.log("Soldier enters tree");
     soldier.classList.add("enterTree");
 }
