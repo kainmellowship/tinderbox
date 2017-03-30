@@ -8,8 +8,33 @@
         transform: translate(40vw);
     }
 }
+.openChest {
+    animation: openChest 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
 
-div {
+@keyframes openChest {
+    10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+
+}
+
+#box {
     position: absolute;
     width: 1100px;
     height: 400px;
@@ -18,44 +43,54 @@ div {
 
 #witch {position: absolute;
     width: 100px;
-    top: 15%;
+    top: 28%;
+    left: 5%
 }
 
 #soldier { position: absolute;
     width: 100px;
-    top: 10%;
-    left: 10%;
+    top: 23%;
+    left: 15%;
 }
 
 #tree {
-    height: 200px;
+    height: 290px;
     position: absolute;
-    left: 40%;
+    left: 35%;
+    top: 0%
 }
 
 #chest {
     width: 100px;
     position: absolute;
-    left: 80%;
-    top: 25%;
+    left: 90%;
+    top: 40%;
 }
 
 #dog {
-    width: 100px;
+    width: 185px;
     position: absolute;
-    left: 70%;
+    left: 65%;
     top: 30%;
 }
 
-h3 {
+#text {
     position: absolute;
-    bottom: 10%;
+    bottom: 7%;
     max-width: 60%;
     padding-left: 20%;
+    color: lightgray;
+    font-family: "Times New Roman", sans-serif;
 }
 
 #buttonOne {
     position: absolute;
     bottom: 5%;
     left: 5%;
+}
+
+#buttonTwo {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
 }
