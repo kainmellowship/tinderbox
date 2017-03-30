@@ -7,6 +7,8 @@ let buttonOne = document.querySelector("#buttonOne");
 let music = document.querySelector("#music");
 let buttonTwo = document.querySelector("#buttonTwo");
 
+let coins = document.querySelectorAll("#coins")
+
 
 /*text*/
 var myString = "Once upon a time there was a poor foot soldier walking along a path. He came across a witch standing by a tree, who told him that if he entered the tree he would face three dogs guarding chests filled with gold. The poor soldier was feeling brave, so he decided to climb down into the tree.";
@@ -57,4 +59,23 @@ function removeClassOpenChest(){
     chest.classList.remove("openChest");
 }
 
+/*openchest*/
+
+/*coins*/
+
+let coinsClicked = 0;
+
+coins.forEach(addEventListener);
+
+        function addEventListener(coins){
+            coins.addEventListener("click", acoinsClicked);
+
+        }
+        function acoinsClicked(){
+            this.classList.add("coins");
+            let picked=document.querySelectorAll(".coins");
+            if(picked.length==3){
+                console.log("3 flowers clicked");
+            }
+        }
 

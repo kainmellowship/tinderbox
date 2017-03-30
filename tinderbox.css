@@ -33,7 +33,10 @@
   }
 
 }
-
+#coins {
+   opacity: 0.2;
+}
+}
 #box {
     position: absolute;
     width: 1100px;
