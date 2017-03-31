@@ -8,14 +8,14 @@
         transform: translate(40vw);
     }
 }
-.openChest {
-    animation: openChest 0.82s cubic-bezier(.36,.07,.19,.97) both;
+.shakeChest {
+    animation: shakeChest 0.82s cubic-bezier(.36,.07,.19,.97) both;
     transform: translate3d(0, 0, 0);
     backface-visibility: hidden;
     perspective: 1000px;
 }
 
-@keyframes openChest {
+@keyframes shakeChest {
     10%, 90% {
     transform: translate3d(-1px, 0, 0);
   }
@@ -33,10 +33,30 @@
   }
 
 }
-#coins {
-   opacity: 0.2;
+.fade{
+        opacity: 0;
+    }
+.coins img {
+
+        height: 25px;
+        width: auto;
+        cursor: pointer;
+    }
+
+.coins {
+    padding-top: 200px;
+    position: absolute;
+    z-index: 1;
+    visibility: visible;
+    right: 10%;
+    bottom: 35%;
 }
+
+h1{
+
+    padding-top: 500px;
 }
+
 #box {
     position: absolute;
     width: 1100px;
@@ -62,14 +82,32 @@
     left: 35%;
     top: 0%
 }
-
+#ochest{
+    width: 104px;
+    position: absolute;
+    left: 90%;
+    top: 33%;
+	display:none;
+}
 #chest {
     width: 100px;
     position: absolute;
     left: 90%;
     top: 40%;
 }
-
+#cf2 img {
+  position:absolute;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+#cf2 img.transparent {
+opacity:0;
+}
+#buttonTwo {
+cursor:pointer;
+}
 #dog {
     width: 185px;
     position: absolute;
