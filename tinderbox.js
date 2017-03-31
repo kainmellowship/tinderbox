@@ -81,6 +81,6 @@ function openChest(){
 
             let picked=document.querySelectorAll(".fade");
             if(picked.length==3){
-                console.log("3 flowers clicked");
+                console.log("3 coins clicked");
             }
         }
